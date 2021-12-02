@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1459032" android:versionName="1.45" android:installLocation="auto" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="air.HardTime" platformBuildVersionCode="29" platformBuildVersionName="10">
+    <application android:label="@string/app_name" android:icon="@mipmap/icon" android:hardwareAccelerated="true" android:largeHeap="true">
+        <activity android:theme="@style/Theme.NoShadow" android:label="@string/app_name" android:name=".AppEntry" android:launchMode="singleTop" android:screenOrientation="user" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|fontScale" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize">
+            <meta-data android:name="embeddedFonts" android:value="false"/>
+            <meta-data android:name="namespaceVersion" android:value="33.1"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="aspectRatio" android:value="landscape"/>
+            <meta-data android:name="autoOrients" android:value="true"/>
+            <meta-data android:name="fullScreen" android:value="true"/>
+            <meta-data android:name="uniqueappversionid" android:value="c4bd310f-6cb5-4a22-b486-fb79a50cea5a"/>
+            <meta-data android:name="initialcontent" android:value="Game.swf"/>
+            <meta-data android:name="containsVideo" android:value="false"/>
+            <meta-data android:name="webContentsDebuggingEnabled" android:value="false"/>
+            <meta-data android:name="disableMediaCodec" android:value="false"/>
+        </activity>
+        <provider android:name="com.adobe.air.CameraUIProvider" android:exported="false" android:authorities="air.HardTime.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <meta-data android:name="android.max_aspect" android:value="2.16"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.distriqt.extension.inappbilling.activities.ProductViewActivity"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="3.0.2"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.android.billingclient.api.ProxyBillingActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:theme="@style/Theme.Black.NoTitleBar.Fullscreen" android:name="com.adcolony.sdk.AdColonyInterstitialActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.Black.NoTitleBar.Fullscreen" android:name="com.adcolony.sdk.AdColonyAdViewActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+    </application>
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="29"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+</manifest>
